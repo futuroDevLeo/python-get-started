@@ -27,3 +27,14 @@ salario = 1412
 despesas = 893.49
 
 print(salario - despesas)
+
+
+# DESAFIO 1
+
+'''
+Nesse desafio pegue as variaveis salario e despesas e 
+calcule o percentual da despesa em relação ao salário
+'''
+
+percentualComprometido = (despesas / salario) * 100
+print('O percentual comprometido pelas despesas é:', percentualComprometido)
