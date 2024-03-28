@@ -36,5 +36,5 @@ Nesse desafio pegue as variaveis salario e despesas e
 calcule o percentual da despesa em relação ao salário
 '''
 
-percentualComprometido = (despesas / salario) * 100
-print('O percentual comprometido pelas despesas é:', percentualComprometido)
+percentual_comprometido = (despesas / salario) * 100
+print('O percentual comprometido pelas despesas é:', percentual_comprometido)

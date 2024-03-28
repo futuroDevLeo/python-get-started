@@ -5,8 +5,8 @@ numero = 5
 print(type(numero))
 
 #ponto flutuante (real)
-outroNumero = 1.2
-print(type(outroNumero))
+outro_numero = 1.2
+print(type(outro_numero))
 
 #string (texto)
 nome = "leo"
