@@ -8,8 +8,7 @@ def gerar_valor_aleatorio(quantidade_de_vezes: int, intervalo: list[int, int]) -
         print(x)
         total += x
         contador += 1
-    resultado = round(total, 2)
-    print(f"O valor total é: {resultado}")
-    print(f"O valor médio é de: {resultado/quantidade_de_vezes}")
+    print(f"O valor total é: {round(total, 2)}")
+    print(f"O valor médio é de: {round(total/quantidade_de_vezes, 2)}")
 
 gerar_valor_aleatorio(12, [0, 400])
