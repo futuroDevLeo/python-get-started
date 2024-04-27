@@ -1,9 +1,10 @@
 # Execício 4
 
-# Uma empresa concedeu um bônus de 20% para todos seus funcionários com mais de cinco anos de empresa.
-# Todos os outros que não se enquadram nesta categoria receberam uma bonificação de 10%, somente.
-# Escreva um algoritmo que leia o salário do funcionário e seu tempo de empresa, e apresente a
-# bonificação de cada funcionário na tela.
+# Uma empresa concedeu um bônus de 20% para todos seus funcionários com mais
+# de cinco anos de empresa. Todos os outros que não se enquadram nesta categoria
+# receberam uma bonificação de 10%, somente. Escreva um algoritmo que leia o
+# salário do funcionário e seu tempo de empresa, e apresente a bonificação de
+# cada funcionário na tela.
 
 def calculo_de_bonificacao():
     nome_funcionario = input('Qual seu nome? ')
@@ -17,7 +18,10 @@ def calculo_de_bonificacao():
 
     tempo_na_empresa = ano_atual - ano_admissao
 
-    if (tempo_na_empresa >= 5):
+    if (tempo_na_empresa > 10):
+        bonus = salario_atual * 0.3
+        return print(f'{nome_funcionario}, sua bonificação é de {round(bonus)}, seu novo salario é: {round((salario_atual + bonus))}.')
+    elif (tempo_na_empresa > 5):
         bonus = salario_atual * 0.2
         return print(f'{nome_funcionario}, sua bonificação é de {round(bonus)}, seu novo salario é: {round((salario_atual + bonus))}.')
     
@@ -25,3 +29,8 @@ def calculo_de_bonificacao():
     return print(f'{nome_funcionario}, sua bonificação é de {round(bonus)}, seu novo salario é: {round((salario_atual + bonus))}.')
 
 calculo_de_bonificacao()
+
+
+# Vamos inserir mais uma camada de restrição neste exercício. Agora, além dos
+# critérios acima, funcionários com mais de 10 anos de empresa têm direito a
+# uma bonificação de 30%.
