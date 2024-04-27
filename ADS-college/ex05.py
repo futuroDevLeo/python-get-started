@@ -21,7 +21,7 @@ def hortifruti(total):
 
     if (produto > 3 or produto < 1):
         print('Opção inválida')
-        return hortifruti()
+        return hortifruti(total)
     
     qtd = int(input('Quantas unidades? '))
 
