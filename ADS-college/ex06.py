@@ -33,9 +33,10 @@ while (contador <= final):
         contador += 1
         soma_impares += contador
     
+print('-------------------------------')    
 print(f'A quantidade de números inteiros e positivos é: {inteiros}')
-print(f'A média de números inteiros e positivos é: {round(inteiros/soma_inteiros)}')
+print(f'A média dos números inteiros e positivos é: {round(soma_inteiros/inteiros)}')
 print(f'A quantidade de números pares é: {pares}')
-print(f'A média de números inteiros e positivos é: {round(pares/soma_pares)}')
+print(f'A média dos números pares é: {round(soma_pares/pares)}')
 print(f'A quantidade de números impares é: {impares}')
-print(f'A média de números inteiros e positivos é: {round(impares/soma_impares)}')
+print(f'A média dos números impares é: {round(soma_impares/impares)}')
