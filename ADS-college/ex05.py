@@ -26,7 +26,7 @@ def hortifruti(total):
     qtd = int(input('Quantas unidades? '))
 
     def nova_compra():
-        pergunta = input('Fazer nova compra? s/n ')
+        pergunta = input('Fazer nova compra? (s/n) ')
         if (pergunta == 's'):
             return hortifruti(total)
         elif (pergunta == 'n'):
