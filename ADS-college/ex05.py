@@ -12,7 +12,7 @@ print('1 - Maça')
 print('2 - Laranja')
 print('3 - Banana')
 
-def hortifruti(total):
+def hortifruti(total=0):
     preco_fruta1 = 2.3
     preco_fruta2 = 3.6
     preco_fruta3 = 1.85
@@ -52,4 +52,4 @@ def hortifruti(total):
         return nova_compra()
 
 
-hortifruti(0)
+hortifruti()
