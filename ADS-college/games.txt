@@ -1,0 +1,12 @@
+
+Jogo: Final Fantasy 7
+Plataforma: PS1
+
+Jogo: The Legend of Zelda: Ocarina Of Time
+Plataforma: Nintendo 64
+
+Jogo: Chrono Trigger
+Plataforma: Super Nintendo
+
+Jogo: Castlevania: Symphony of the Night
+Plataforma: PS1
