@@ -38,11 +38,11 @@ def listar_arquivo(nome_arquivos):
     except:
         print('Erro ao listar o arquivo.')
     else:
-        print('\n')
-        print('--------------------')
+        print()
+        print('-' * 20)
         print(a.read())
-        print('--------------------')
-        print('\n')
+        print('-' * 20)
+        print()
     finally:
         a.close()
 
@@ -65,10 +65,11 @@ else:
     criar_arquivo(arquivo)
 
 while True:
-    print("""    --- Menu ---
-    1 - Cadastrar novo item;
-    2 - Listar cadastros;
-    3 - Sair"""
+    print(
+"""--- Menu ---
+1 - Cadastrar novo item;
+2 - Listar cadastros;
+3 - Sair"""
     )
     op = valida_op("Escolha a opção desejada: ", 1, 3)
     if op == 1:
