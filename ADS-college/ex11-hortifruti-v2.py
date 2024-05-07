@@ -33,17 +33,17 @@ def valida_int(pergunta, produto):
     min = 1
     max = produto[0]
     while((x < min) or (x > max)):
-        print(f'Quantidade invalida, temos um estoque de {max} da/o {produto[1]}.')
+        print(f'Quantidade invalida, temos um estoque de {max} da(o) {produto[1]}.')
         x = int(input(pergunta))
     return x
 
 def nova_compra(total):
-    pergunta = input('Continuar comprando? (S/N) ')
+    pergunta = input('Continuar comprando? [S/N] ')
     if (pergunta in 'Ss'):
         return compra_hortifruti(total)
     elif (pergunta in 'Nn'):
         print(f'\n--- Para controle interno ---\nEstoque atualizado após compra:\n{estoque_hortifruti}\n\n')
-        return print(f'Total a pagar: R$ {total}')
+        return print(f'Total a pagar: R$ {round(total, 2)}')
     else:
         print('Opção inválida')
         return nova_compra(total)
@@ -57,6 +57,9 @@ def compra_hortifruti(total=0):
     print('\n' + '-' * 3 + 'Fim da lista' + '-' * 3 + '\n')
     op_produto = valida_op('Qual item gostaria de comprar? ')
     produto = [estoque_hortifruti.get(op_produto)[1], op_produto]
+    if produto[0] == 0:
+        print('\nProduto esgotado, por favor, escolha outro item ou finalize a compra.\n')
+        return nova_compra(total)
     op_quantidade = valida_int('Quantas unidades gostaria de comprar desse produto? ', produto)
     total_compra = op_quantidade * estoque_hortifruti.get(op_produto)[0]
     print(f'\nVocê escolheu {op_quantidade} unidades de {op_produto}.\nTotal: R$ {round(total_compra,2)}\n')
@@ -65,7 +68,7 @@ def compra_hortifruti(total=0):
     return nova_compra(total)
 
 while True:
-    compra = input('Gostaria de iniciar uma compra? (S/N) ')
+    compra = input('Gostaria de iniciar uma compra? [S/N] ')
 
     if (compra in 'Ss'):
         compra_hortifruti()
