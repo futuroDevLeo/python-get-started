@@ -26,14 +26,14 @@ def hortifruti(total=0):
     qtd = int(input('Quantas unidades? '))
 
     def nova_compra():
-        pergunta = input('Fazer nova compra? (s/n) ')
-        if (pergunta == 's'):
+        pergunta = input('Comtinuar comprando? (S/N) ')
+        if (pergunta in 'Ss'):
             return hortifruti(total)
-        elif (pergunta == 'n'):
+        elif (pergunta in 'Nn'):
             return print(f'Total: {total}')
         else:
             print('Opção inválida')
-            return nova_compra()
+            return nova_compra(total)
 
     if (produto == 1):
         valor = qtd * preco_fruta1
