@@ -9,18 +9,7 @@
 # •	Se valor for igual ou maior que 6000 e menor que 10000 o desconto será de 7%;
 # •	Se valor for igual ou maior que 10000 o desconto será de 11%;
 
-# Elabore um programa em Python que:
-# A. Deve-se implementar o print com uma mensagem de boas-vindas que apareça o seu nome; OK
-# B. Deve-se implementar o input do valor unitário e da quantidade do produto; OK
-# C. Deve-se implementar o desconto conforme a enunciado acima
-#   (obs.: atente-se as condições de menor, igual e maior); OK
-# D. Deve-se implementar o valor total sem desconto e o valor total com desconto; OK
-# E. Deve-se implementar as estruturas if, elif e else (todas elas); OK
-# F. Deve-se inserir comentários relevantes no código; OK
-# G. Deve-se apresentar na saída de console uma mensagem de boas-vindas com seu nome; OK
-# H. Deve-se apresentar na saída de console um pedido recebendo desconto
-#   (valor total sem desconto maior ou igual a 2500); OK
-
+# --------------------------------PROGRAMA PRINCIPAL---------------------------------------
 
 print('Bem-vindo a Loja do Leonardo Nunes')
 
